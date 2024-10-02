@@ -1,0 +1,36 @@
+syntax = "proto3"; //컴파일러가 사용할 문법
+option java_multiple_files=true; //세팅 오버라이드=개개의 파일로 생성됨
+package org.example;//생성된 자바 클래스들에서 사용하길 원하는 패키지 명시
+
+//요청
+message Request{
+  string type=1;
+  string payload=2;
+}
+
+//학생 응답
+message StudentResponse{
+  string id=1;
+  string name=2;
+  string department=3;
+  repeated string courseList=4;
+}
+message StudentsListResponse{
+  repeated StudentResponse student=1;
+}
+//과목 응답
+message CourseResponse{
+  string id=1;
+  string professor=2;
+  string className=3;
+  repeated string preClass=4;
+}
+message CourseListResponse{
+  repeated CourseResponse course=1;
+}
+
+//서비스 협약Contract 정의
+service DataService{
+  rpc getStudentList(Request) returns (StudentsListResponse);
+  rpc getCourseList(Request) returns (CourseListResponse);
+}

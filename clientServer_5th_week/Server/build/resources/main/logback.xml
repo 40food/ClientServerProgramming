@@ -1,0 +1,7 @@
+<configuration>
+    <logger name="io.grpc.netty.shaded.io.netty.util.internal.logging.InternalLoggerFactory" level="INFO"/>
+    <root level="INFO">
+        <appender-ref ref="STDOUT"/>
+    </root>
+</configuration>
+<!--SLF4J의 출력 레벨 설정(Debug 단계 안 띄우게)-->

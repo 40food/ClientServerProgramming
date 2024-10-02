@@ -45,6 +45,7 @@
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "git-widget-placeholder": "main",
     "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/Users/food0/Documents/GitHub/ClientServerProgramming/clientServer_5th_week/Server",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -138,7 +139,7 @@
       <workItem from="1726031388161" duration="4850000" />
       <workItem from="1726654857106" duration="8739000" />
       <workItem from="1726680700813" duration="11786000" />
-      <workItem from="1727806358889" duration="1202000" />
+      <workItem from="1727806358889" duration="1911000" />
     </task>
     <task id="LOCAL-00001" summary="grpc로 이름 저장 및 꺼내기">
       <option name="closed" value="true" />
