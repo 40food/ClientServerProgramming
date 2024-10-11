@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="9fd86e97-3404-4bf8-b1c6-6095960d7297" name="변경" comment="grpc로 이름 저장 및 꺼내기">
+      <change beforePath="$PROJECT_DIR$/../../clientServer_1st_week/.gradle/8.4/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../../clientServer_1st_week/.gradle/8.4/executionHistory/executionHistory.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../clientServer_1st_week/.gradle/8.4/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../../clientServer_1st_week/.gradle/8.4/fileHashes/fileHashes.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../clientServer_1st_week/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../../clientServer_1st_week/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../clientServer_1st_week/.gradle/file-system.probe" beforeDir="false" afterPath="$PROJECT_DIR$/../../clientServer_1st_week/.gradle/file-system.probe" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ExternalProjectsData">
+    <projectState path="$PROJECT_DIR$">
+      <ProjectState />
+    </projectState>
+  </component>
+  <component name="ExternalProjectsManager">
+    <system id="GRADLE">
+      <state>
+        <projects_view>
+          <tree_state>
+            <expand>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="clientServer_1st_week" type="f1a62948:ProjectNode" />
+              </path>
+            </expand>
+            <select />
+          </tree_state>
+        </projects_view>
+      </state>
+    </system>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+        <option value="Interface" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 4
+}</component>
+  <component name="ProjectId" id="2lnEbfak9MiYRLjU918U7ZRLW9w" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Gradle.clientServer_1st_week [:LoadClient.main()].executor": "Run",
+    "Gradle.clientServer_1st_week [:NameServer.main()].executor": "Run",
+    "Gradle.clientServer_1st_week [:SaveClient.main()].executor": "Run",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "android.gradle.sync.needed": "true",
+    "git-widget-placeholder": "main",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/Users/food0/Documents/GitHub/ClientServerProgramming/clientServer_5th_week/project",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "모듈",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0",
+    "settings.editor.selected.configurable": "File.Encoding",
+    "vue.rearranger.settings.migration": "true"
+  },
+  "keyToStringList": {
+    "DatabaseDriversLRU": [
+      "mariadb"
+    ]
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\food0\Documents\GitHub\ClientServerProgramming\clientServer_5th_week\clientServer_1st_week\src\main\java\server" />
+      <recent name="C:\Users\food0\Documents\GitHub\ClientServerProgramming\clientServer_5th_week\clientServer_1st_week\src\main\java\exception" />
+      <recent name="C:\Users\food0\Documents\GitHub\ClientServerProgramming\clientServer_5th_week\clientServer_1st_week\src\main\java\data" />
+      <recent name="C:\Users\food0\Documents\GitHub\ClientServerProgramming\clientServer_5th_week\clientServer_1st_week\src\main\java\client" />
+      <recent name="C:\Users\food0\Documents\GitHub\ClientServerProgramming\clientServer_5th_week\clientServer_1st_week\src\main\proto" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\food0\Documents\GitHub\ClientServerProgramming\clientServer_1st_week\src\main\java\proto" />
+      <recent name="C:\Users\food0\Documents\GitHub\ClientServerProgramming\clientServer_1st_week\src\main\java\org\example" />
+      <recent name="C:\Users\food0\Documents\GitHub\ClientServerProgramming\clientServer_1st_week\src\main\java" />
+    </key>
+  </component>
+  <component name="RunManager" selected="애플리케이션.LoadClient">
+    <configuration name="LoadClient" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="client.LoadClient" />
+      <module name="clientServer_1st_week.main" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="client.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="NameServer" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="server.NameServer" />
+      <module name="clientServer_1st_week.main" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="server.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SaveClient" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="client.SaveClient" />
+      <module name="clientServer_1st_week.main" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="client.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="GroovyScriptRunConfiguration" factoryName="Groovy">
+      <setting name="path" value="" />
+      <setting name="vmparams" value="" />
+      <setting name="params" value="" />
+      <setting name="workDir" value="file://$PROJECT_DIR$" />
+      <setting name="debug" value="false" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="애플리케이션.LoadClient" />
+        <item itemvalue="애플리케이션.SaveClient" />
+        <item itemvalue="애플리케이션.NameServer" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="jdk-17.0.10-corretto-17.0.10-4caba194b151-5cd809f4" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="애플리케이션 수준" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="디폴트 작업">
+      <changelist id="9fd86e97-3404-4bf8-b1c6-6095960d7297" name="변경" comment="" />
+      <created>1725807514880</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1725807514880</updated>
+      <workItem from="1725807515955" duration="6197000" />
+      <workItem from="1725815651814" duration="11653000" />
+      <workItem from="1726027008900" duration="1192000" />
+      <workItem from="1726031388161" duration="4850000" />
+      <workItem from="1726654857106" duration="8739000" />
+      <workItem from="1726680700813" duration="11786000" />
+      <workItem from="1727806358889" duration="1911000" />
+      <workItem from="1728506683446" duration="250000" />
+    </task>
+    <task id="LOCAL-00001" summary="grpc로 이름 저장 및 꺼내기">
+      <option name="closed" value="true" />
+      <created>1727806755619</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1727806755619</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="grpc로 이름 저장 및 꺼내기" />
+    <option name="LAST_COMMIT_MESSAGE" value="grpc로 이름 저장 및 꺼내기" />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
+  </component>
+</project>
