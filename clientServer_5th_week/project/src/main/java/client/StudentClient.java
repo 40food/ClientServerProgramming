@@ -1,6 +1,7 @@
 package client;
 
 import client.exception.CommonException;
+import client.exception.NullDataException;
 import io.grpc.Metadata;
 import io.grpc.stub.MetadataUtils;
 import org.example.*;

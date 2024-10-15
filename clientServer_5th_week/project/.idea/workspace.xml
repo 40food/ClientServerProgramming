@@ -1,24 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="AutoImportSettings">
-    <option name="autoReloadType" value="SELECTIVE" />
+    <option name="autoReloadType" value="NONE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9fd86e97-3404-4bf8-b1c6-6095960d7297" name="변경" comment="grpc로 이름 저장 및 꺼내기">
-      <change beforePath="$PROJECT_DIR$/../../clientServer_1st_week/.gradle/8.4/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/../../clientServer_1st_week/.gradle/8.4/executionHistory/executionHistory.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../clientServer_1st_week/.gradle/8.4/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../../clientServer_1st_week/.gradle/8.4/executionHistory/executionHistory.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../clientServer_1st_week/.gradle/8.4/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/../../clientServer_1st_week/.gradle/8.4/fileHashes/fileHashes.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../clientServer_1st_week/.gradle/8.4/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../../clientServer_1st_week/.gradle/8.4/fileHashes/fileHashes.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../clientServer_1st_week/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../../clientServer_1st_week/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../clientServer_1st_week/.gradle/file-system.probe" beforeDir="false" afterPath="$PROJECT_DIR$/../../clientServer_1st_week/.gradle/file-system.probe" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../clientServer_1st_week/build/libs/clientServer_1st_week.jar" beforeDir="false" afterPath="$PROJECT_DIR$/../../clientServer_1st_week/build/libs/clientServer_1st_week.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../clientServer_1st_week/build/tmp/.cache/expanded/expanded.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../../clientServer_1st_week/build/tmp/.cache/expanded/expanded.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../clientServer_1st_week/build/tmp/compileJava/compileTransaction/stash-dir/LoadClient.class.uniqueId0" beforeDir="false" />
-    </list>
+    <list default="true" id="9fd86e97-3404-4bf8-b1c6-6095960d7297" name="변경" comment="grpc로 이름 저장 및 꺼내기" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ClangdSettings">
+    <option name="formatViaClangd" value="false" />
   </component>
   <component name="ExternalProjectsData">
     <projectState path="$PROJECT_DIR$">
@@ -708,38 +701,42 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Gradle.clientServer_1st_week [:LoadClient.main()].executor": "Run",
-    "Gradle.clientServer_1st_week [:NameServer.main()].executor": "Run",
-    "Gradle.clientServer_1st_week [:SaveClient.main()].executor": "Run",
-    "Gradle.project [:Client.main()].executor": "Run",
-    "Gradle.project [:Data.main()].executor": "Run",
-    "Gradle.project [:Server.main()].executor": "Run",
-    "Gradle.project [build].executor": "Run",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "git-widget-placeholder": "main",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/food0/Documents/GitHub/ClientServerProgramming/clientServer_5th_week/project",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "모듈",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.0",
-    "settings.editor.selected.configurable": "File.Encoding",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Gradle.clientServer_1st_week [:LoadClient.main()].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.clientServer_1st_week [:NameServer.main()].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.clientServer_1st_week [:SaveClient.main()].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.project [:Client.main()].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.project [:Data.main()].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.project [:Server.main()].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.project [build].executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.cidr.known.project.marker&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;android.gradle.sync.needed&quot;: &quot;true&quot;,
+    &quot;cf.first.check.clang-format&quot;: &quot;false&quot;,
+    &quot;cidr.known.project.marker&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/food0/Documents/GitHub/Android&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;모듈&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;File.Encoding&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   },
-  "keyToStringList": {
-    "DatabaseDriversLRU": [
-      "mariadb"
+  &quot;keyToStringList&quot;: {
+    &quot;DatabaseDriversLRU&quot;: [
+      &quot;mariadb&quot;
     ]
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\food0\Documents\GitHub\ClientServerProgramming\clientServer_5th_week\project\src\main\java\data\file" />
@@ -748,13 +745,17 @@
       <recent name="C:\Users\food0\Documents\GitHub\ClientServerProgramming\clientServer_1st_week\src\main\java\org\example" />
       <recent name="C:\Users\food0\Documents\GitHub\ClientServerProgramming\clientServer_1st_week\src\main\java" />
     </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="client.exception" />
+      <recent name="server.exception" />
+    </key>
   </component>
   <component name="RunAnythingCache">
     <option name="myCommands">
       <command value="gradle build" />
     </option>
   </component>
-  <component name="RunManager" selected="애플리케이션.Client">
+  <component name="RunManager" selected="Gradle.project [build]">
     <configuration name="Client" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="client.Client" />
       <module name="project.main" />
@@ -832,9 +833,6 @@
     <recent_temporary>
       <list>
         <item itemvalue="Gradle.project [build]" />
-        <item itemvalue="애플리케이션.Client" />
-        <item itemvalue="애플리케이션.Server" />
-        <item itemvalue="애플리케이션.Data" />
       </list>
     </recent_temporary>
   </component>
@@ -864,6 +862,7 @@
       <workItem from="1728658582640" duration="11257000" />
       <workItem from="1728671106317" duration="160000" />
       <workItem from="1728671278376" duration="1138000" />
+      <workItem from="1728945834389" duration="3835000" />
     </task>
     <task id="LOCAL-00001" summary="grpc로 이름 저장 및 꺼내기">
       <option name="closed" value="true" />

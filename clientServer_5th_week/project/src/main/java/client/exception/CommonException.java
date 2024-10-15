@@ -3,7 +3,7 @@ package client.exception;
 import io.grpc.Status;
 import io.grpc.StatusRuntimeException;
 
-public class CommonException {
+public class CommonException extends Exception {
     // 공통 예외 처리 메서드
     public static void handleRpcException(Exception e) {
         if (e instanceof StatusRuntimeException) {

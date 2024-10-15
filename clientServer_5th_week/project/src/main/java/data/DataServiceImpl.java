@@ -4,6 +4,7 @@ import data.Course.Course;
 import data.Course.CourseList;
 import data.Student.Student;
 import data.Student.StudentList;
+import data.exception.NullDataException;
 import io.grpc.Context;
 import io.grpc.Metadata;
 import io.grpc.Status;
@@ -78,6 +79,10 @@ public class DataServiceImpl extends DataServiceGrpc.DataServiceImplBase {
                     .asRuntimeException();
             responseObserver.onError(statusException);
             throw new RuntimeException(e);
+        } catch (NullDataException e) {
+            responseObserver.onError(Status.FAILED_PRECONDITION
+                    .withDescription(e.getMessage())
+                    .asRuntimeException());
         }
     }
 

@@ -1,5 +1,7 @@
 package data.Student;
 
+import data.exception.NullDataException;
+
 import java.io.BufferedReader;
 import java.io.FileNotFoundException;
 import java.io.FileReader;
@@ -21,7 +23,8 @@ public class StudentList {
 		objStudentFile.close();
 	}
 
-	public ArrayList<Student> getAllStudentRecords() {
+	public ArrayList<Student> getAllStudentRecords() throws NullDataException {
+		if(this.vStudent.isEmpty()) throw new NullDataException("===student 데이터가 없습니다.");
 		return this.vStudent;
 	}
 

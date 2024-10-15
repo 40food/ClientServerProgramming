@@ -39,19 +39,22 @@ public class Client {
         client.loginStudent=client.studentClient.login(id,pw);
 
         while(client.loginStudent!=null){
-            System.out.println("========메뉴========");
-            System.out.println("1. 전체 학생 정보 불러오기");
-            System.out.println("2. 전체 과목 정보 불러오기");
-            System.out.println("3. 나가기");
-
+            printMenu();
             String value=scanner.next();
             switch(value){
                 case "1":client.studentClient.getAllStudent(client.loginStudent.getId()); break;
                 case "2":client.courseClient.getAllCourse(client.loginStudent.getId()); break;
-                case "3":logout(client); break;
+                case "x":logout(client); break;
                 default: System.out.println("메뉴에 없는 요청입니다.");
             }
         }
+    }
+
+    private static void printMenu(){
+        System.out.println("========메뉴========");
+        System.out.println("1. 전체 학생 정보 불러오기");
+        System.out.println("2. 전체 과목 정보 불러오기");
+        System.out.println("x. 나가기");
     }
 
     private static void logout(Client client){
