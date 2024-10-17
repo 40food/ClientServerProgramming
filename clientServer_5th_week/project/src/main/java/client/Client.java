@@ -11,10 +11,10 @@ import java.util.Scanner;
 
 public class Client {
 
-    private StudentClient studentClient;
-    private CourseClient courseClient;
-    private ManagedChannel channel;
-    private DataServiceGrpc.DataServiceBlockingStub stub;
+    private final StudentClient studentClient;
+    private final CourseClient courseClient;
+    private final ManagedChannel channel;
+    private final DataServiceGrpc.DataServiceBlockingStub stub;
     private static Scanner scanner;
     private StudentResponse loginStudent;
 
@@ -24,26 +24,21 @@ public class Client {
                 .build();
         stub=DataServiceGrpc.newBlockingStub(channel);
         scanner=new Scanner(System.in);
-        studentClient=new StudentClient(stub);
-        courseClient=new CourseClient(stub);
+        studentClient=new StudentClient(scanner,stub);
+        courseClient=new CourseClient(scanner,stub);
     }
 
     public static void main(String[] args){
         Client client=new Client();
-
-        System.out.println("========로그인을 진행해주세요.========");
-        System.out.print("id:");
-        String id=scanner.next();
-        System.out.print("pw:");
-        String pw=scanner.next();
-        client.loginStudent=client.studentClient.login(id,pw);
-
+        client.loginStudent=client.studentClient.login();
         while(client.loginStudent!=null){
             printMenu();
             String value=scanner.next();
             switch(value){
                 case "1":client.studentClient.getAllStudent(client.loginStudent.getId()); break;
                 case "2":client.courseClient.getAllCourse(client.loginStudent.getId()); break;
+                case "3":client.studentClient.addStudent(client.loginStudent.getId());break;
+                case "4":client.studentClient.deleteStudent(client.loginStudent.getId());break;
                 case "x":logout(client); break;
                 default: System.out.println("메뉴에 없는 요청입니다.");
             }
@@ -51,9 +46,14 @@ public class Client {
     }
 
     private static void printMenu(){
-        System.out.println("========메뉴========");
+        System.out.println("\n========메뉴========");
         System.out.println("1. 전체 학생 정보 불러오기");
         System.out.println("2. 전체 과목 정보 불러오기");
+        System.out.println("3. 학생 추가하기");
+        System.out.println("4. 학생 지우기");
+        System.out.println("5. 과목 추가하기-미완");
+        System.out.println("6. 과목 지우기-미완");
+        System.out.println("7. 수강 신청하기-미완");
         System.out.println("x. 나가기");
     }
 

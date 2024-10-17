@@ -3,9 +3,11 @@ package client;
 import client.exception.CommonException;
 import org.example.*;
 
+import java.util.Scanner;
+
 public class CourseClient {
     private DataServiceGrpc.DataServiceBlockingStub stub;
-    public CourseClient(DataServiceGrpc.DataServiceBlockingStub stub) {
+    public CourseClient(Scanner scanner, DataServiceGrpc.DataServiceBlockingStub stub) {
         this.stub=stub;
     }
 
