@@ -5,7 +5,7 @@ package org.example;
 
 /**
  * <pre>
- *기본 요청
+ *기본
  * </pre>
  *
  * Protobuf type {@code org.example.Request}
@@ -20,7 +20,7 @@ private static final long serialVersionUID = 0L;
     super(builder);
   }
   private Request() {
-    requestId_ = "";
+    token_ = "";
     type_ = "";
     payload_ = "";
   }
@@ -45,39 +45,39 @@ private static final long serialVersionUID = 0L;
             org.example.Request.class, org.example.Request.Builder.class);
   }
 
-  public static final int REQUESTID_FIELD_NUMBER = 1;
+  public static final int TOKEN_FIELD_NUMBER = 1;
   @SuppressWarnings("serial")
-  private volatile java.lang.Object requestId_ = "";
+  private volatile java.lang.Object token_ = "";
   /**
-   * <code>string requestId = 1;</code>
-   * @return The requestId.
+   * <code>string token = 1;</code>
+   * @return The token.
    */
   @java.lang.Override
-  public java.lang.String getRequestId() {
-    java.lang.Object ref = requestId_;
+  public java.lang.String getToken() {
+    java.lang.Object ref = token_;
     if (ref instanceof java.lang.String) {
       return (java.lang.String) ref;
     } else {
       com.google.protobuf.ByteString bs = 
           (com.google.protobuf.ByteString) ref;
       java.lang.String s = bs.toStringUtf8();
-      requestId_ = s;
+      token_ = s;
       return s;
     }
   }
   /**
-   * <code>string requestId = 1;</code>
-   * @return The bytes for requestId.
+   * <code>string token = 1;</code>
+   * @return The bytes for token.
    */
   @java.lang.Override
   public com.google.protobuf.ByteString
-      getRequestIdBytes() {
-    java.lang.Object ref = requestId_;
+      getTokenBytes() {
+    java.lang.Object ref = token_;
     if (ref instanceof java.lang.String) {
       com.google.protobuf.ByteString b = 
           com.google.protobuf.ByteString.copyFromUtf8(
               (java.lang.String) ref);
-      requestId_ = b;
+      token_ = b;
       return b;
     } else {
       return (com.google.protobuf.ByteString) ref;
@@ -176,8 +176,8 @@ private static final long serialVersionUID = 0L;
   @java.lang.Override
   public void writeTo(com.google.protobuf.CodedOutputStream output)
                       throws java.io.IOException {
-    if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(requestId_)) {
-      com.google.protobuf.GeneratedMessageV3.writeString(output, 1, requestId_);
+    if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(token_)) {
+      com.google.protobuf.GeneratedMessageV3.writeString(output, 1, token_);
     }
     if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(type_)) {
       com.google.protobuf.GeneratedMessageV3.writeString(output, 2, type_);
@@ -194,8 +194,8 @@ private static final long serialVersionUID = 0L;
     if (size != -1) return size;
 
     size = 0;
-    if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(requestId_)) {
-      size += com.google.protobuf.GeneratedMessageV3.computeStringSize(1, requestId_);
+    if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(token_)) {
+      size += com.google.protobuf.GeneratedMessageV3.computeStringSize(1, token_);
     }
     if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(type_)) {
       size += com.google.protobuf.GeneratedMessageV3.computeStringSize(2, type_);
@@ -218,8 +218,8 @@ private static final long serialVersionUID = 0L;
     }
     org.example.Request other = (org.example.Request) obj;
 
-    if (!getRequestId()
-        .equals(other.getRequestId())) return false;
+    if (!getToken()
+        .equals(other.getToken())) return false;
     if (!getType()
         .equals(other.getType())) return false;
     if (!getPayload()
@@ -235,8 +235,8 @@ private static final long serialVersionUID = 0L;
     }
     int hash = 41;
     hash = (19 * hash) + getDescriptor().hashCode();
-    hash = (37 * hash) + REQUESTID_FIELD_NUMBER;
-    hash = (53 * hash) + getRequestId().hashCode();
+    hash = (37 * hash) + TOKEN_FIELD_NUMBER;
+    hash = (53 * hash) + getToken().hashCode();
     hash = (37 * hash) + TYPE_FIELD_NUMBER;
     hash = (53 * hash) + getType().hashCode();
     hash = (37 * hash) + PAYLOAD_FIELD_NUMBER;
@@ -340,7 +340,7 @@ private static final long serialVersionUID = 0L;
   }
   /**
    * <pre>
-   *기본 요청
+   *기본
    * </pre>
    *
    * Protobuf type {@code org.example.Request}
@@ -376,7 +376,7 @@ private static final long serialVersionUID = 0L;
     public Builder clear() {
       super.clear();
       bitField0_ = 0;
-      requestId_ = "";
+      token_ = "";
       type_ = "";
       payload_ = "";
       return this;
@@ -413,7 +413,7 @@ private static final long serialVersionUID = 0L;
     private void buildPartial0(org.example.Request result) {
       int from_bitField0_ = bitField0_;
       if (((from_bitField0_ & 0x00000001) != 0)) {
-        result.requestId_ = requestId_;
+        result.token_ = token_;
       }
       if (((from_bitField0_ & 0x00000002) != 0)) {
         result.type_ = type_;
@@ -467,8 +467,8 @@ private static final long serialVersionUID = 0L;
 
     public Builder mergeFrom(org.example.Request other) {
       if (other == org.example.Request.getDefaultInstance()) return this;
-      if (!other.getRequestId().isEmpty()) {
-        requestId_ = other.requestId_;
+      if (!other.getToken().isEmpty()) {
+        token_ = other.token_;
         bitField0_ |= 0x00000001;
         onChanged();
       }
@@ -509,7 +509,7 @@ private static final long serialVersionUID = 0L;
               done = true;
               break;
             case 10: {
-              requestId_ = input.readStringRequireUtf8();
+              token_ = input.readStringRequireUtf8();
               bitField0_ |= 0x00000001;
               break;
             } // case 10
@@ -540,73 +540,73 @@ private static final long serialVersionUID = 0L;
     }
     private int bitField0_;
 
-    private java.lang.Object requestId_ = "";
+    private java.lang.Object token_ = "";
     /**
-     * <code>string requestId = 1;</code>
-     * @return The requestId.
+     * <code>string token = 1;</code>
+     * @return The token.
      */
-    public java.lang.String getRequestId() {
-      java.lang.Object ref = requestId_;
+    public java.lang.String getToken() {
+      java.lang.Object ref = token_;
       if (!(ref instanceof java.lang.String)) {
         com.google.protobuf.ByteString bs =
             (com.google.protobuf.ByteString) ref;
         java.lang.String s = bs.toStringUtf8();
-        requestId_ = s;
+        token_ = s;
         return s;
       } else {
         return (java.lang.String) ref;
       }
     }
     /**
-     * <code>string requestId = 1;</code>
-     * @return The bytes for requestId.
+     * <code>string token = 1;</code>
+     * @return The bytes for token.
      */
     public com.google.protobuf.ByteString
-        getRequestIdBytes() {
-      java.lang.Object ref = requestId_;
+        getTokenBytes() {
+      java.lang.Object ref = token_;
       if (ref instanceof String) {
         com.google.protobuf.ByteString b = 
             com.google.protobuf.ByteString.copyFromUtf8(
                 (java.lang.String) ref);
-        requestId_ = b;
+        token_ = b;
         return b;
       } else {
         return (com.google.protobuf.ByteString) ref;
       }
     }
     /**
-     * <code>string requestId = 1;</code>
-     * @param value The requestId to set.
+     * <code>string token = 1;</code>
+     * @param value The token to set.
      * @return This builder for chaining.
      */
-    public Builder setRequestId(
+    public Builder setToken(
         java.lang.String value) {
       if (value == null) { throw new NullPointerException(); }
-      requestId_ = value;
+      token_ = value;
       bitField0_ |= 0x00000001;
       onChanged();
       return this;
     }
     /**
-     * <code>string requestId = 1;</code>
+     * <code>string token = 1;</code>
      * @return This builder for chaining.
      */
-    public Builder clearRequestId() {
-      requestId_ = getDefaultInstance().getRequestId();
+    public Builder clearToken() {
+      token_ = getDefaultInstance().getToken();
       bitField0_ = (bitField0_ & ~0x00000001);
       onChanged();
       return this;
     }
     /**
-     * <code>string requestId = 1;</code>
-     * @param value The bytes for requestId to set.
+     * <code>string token = 1;</code>
+     * @param value The bytes for token to set.
      * @return This builder for chaining.
      */
-    public Builder setRequestIdBytes(
+    public Builder setTokenBytes(
         com.google.protobuf.ByteString value) {
       if (value == null) { throw new NullPointerException(); }
       checkByteStringIsUtf8(value);
-      requestId_ = value;
+      token_ = value;
       bitField0_ |= 0x00000001;
       onChanged();
       return this;

@@ -41,41 +41,41 @@ private static final long serialVersionUID = 0L;
 
   public static final int COURSE_FIELD_NUMBER = 1;
   @SuppressWarnings("serial")
-  private java.util.List<org.example.CourseResponse> course_;
+  private java.util.List<org.example.Course> course_;
   /**
-   * <code>repeated .org.example.CourseResponse course = 1;</code>
+   * <code>repeated .org.example.Course course = 1;</code>
    */
   @java.lang.Override
-  public java.util.List<org.example.CourseResponse> getCourseList() {
+  public java.util.List<org.example.Course> getCourseList() {
     return course_;
   }
   /**
-   * <code>repeated .org.example.CourseResponse course = 1;</code>
+   * <code>repeated .org.example.Course course = 1;</code>
    */
   @java.lang.Override
-  public java.util.List<? extends org.example.CourseResponseOrBuilder> 
+  public java.util.List<? extends org.example.CourseOrBuilder> 
       getCourseOrBuilderList() {
     return course_;
   }
   /**
-   * <code>repeated .org.example.CourseResponse course = 1;</code>
+   * <code>repeated .org.example.Course course = 1;</code>
    */
   @java.lang.Override
   public int getCourseCount() {
     return course_.size();
   }
   /**
-   * <code>repeated .org.example.CourseResponse course = 1;</code>
+   * <code>repeated .org.example.Course course = 1;</code>
    */
   @java.lang.Override
-  public org.example.CourseResponse getCourse(int index) {
+  public org.example.Course getCourse(int index) {
     return course_.get(index);
   }
   /**
-   * <code>repeated .org.example.CourseResponse course = 1;</code>
+   * <code>repeated .org.example.Course course = 1;</code>
    */
   @java.lang.Override
-  public org.example.CourseResponseOrBuilder getCourseOrBuilder(
+  public org.example.CourseOrBuilder getCourseOrBuilder(
       int index) {
     return course_.get(index);
   }
@@ -425,9 +425,9 @@ private static final long serialVersionUID = 0L;
               done = true;
               break;
             case 10: {
-              org.example.CourseResponse m =
+              org.example.Course m =
                   input.readMessage(
-                      org.example.CourseResponse.parser(),
+                      org.example.Course.parser(),
                       extensionRegistry);
               if (courseBuilder_ == null) {
                 ensureCourseIsMutable();
@@ -454,22 +454,22 @@ private static final long serialVersionUID = 0L;
     }
     private int bitField0_;
 
-    private java.util.List<org.example.CourseResponse> course_ =
+    private java.util.List<org.example.Course> course_ =
       java.util.Collections.emptyList();
     private void ensureCourseIsMutable() {
       if (!((bitField0_ & 0x00000001) != 0)) {
-        course_ = new java.util.ArrayList<org.example.CourseResponse>(course_);
+        course_ = new java.util.ArrayList<org.example.Course>(course_);
         bitField0_ |= 0x00000001;
        }
     }
 
     private com.google.protobuf.RepeatedFieldBuilderV3<
-        org.example.CourseResponse, org.example.CourseResponse.Builder, org.example.CourseResponseOrBuilder> courseBuilder_;
+        org.example.Course, org.example.Course.Builder, org.example.CourseOrBuilder> courseBuilder_;
 
     /**
-     * <code>repeated .org.example.CourseResponse course = 1;</code>
+     * <code>repeated .org.example.Course course = 1;</code>
      */
-    public java.util.List<org.example.CourseResponse> getCourseList() {
+    public java.util.List<org.example.Course> getCourseList() {
       if (courseBuilder_ == null) {
         return java.util.Collections.unmodifiableList(course_);
       } else {
@@ -477,7 +477,7 @@ private static final long serialVersionUID = 0L;
       }
     }
     /**
-     * <code>repeated .org.example.CourseResponse course = 1;</code>
+     * <code>repeated .org.example.Course course = 1;</code>
      */
     public int getCourseCount() {
       if (courseBuilder_ == null) {
@@ -487,9 +487,9 @@ private static final long serialVersionUID = 0L;
       }
     }
     /**
-     * <code>repeated .org.example.CourseResponse course = 1;</code>
+     * <code>repeated .org.example.Course course = 1;</code>
      */
-    public org.example.CourseResponse getCourse(int index) {
+    public org.example.Course getCourse(int index) {
       if (courseBuilder_ == null) {
         return course_.get(index);
       } else {
@@ -497,10 +497,10 @@ private static final long serialVersionUID = 0L;
       }
     }
     /**
-     * <code>repeated .org.example.CourseResponse course = 1;</code>
+     * <code>repeated .org.example.Course course = 1;</code>
      */
     public Builder setCourse(
-        int index, org.example.CourseResponse value) {
+        int index, org.example.Course value) {
       if (courseBuilder_ == null) {
         if (value == null) {
           throw new NullPointerException();
@@ -514,10 +514,10 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>repeated .org.example.CourseResponse course = 1;</code>
+     * <code>repeated .org.example.Course course = 1;</code>
      */
     public Builder setCourse(
-        int index, org.example.CourseResponse.Builder builderForValue) {
+        int index, org.example.Course.Builder builderForValue) {
       if (courseBuilder_ == null) {
         ensureCourseIsMutable();
         course_.set(index, builderForValue.build());
@@ -528,9 +528,9 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>repeated .org.example.CourseResponse course = 1;</code>
+     * <code>repeated .org.example.Course course = 1;</code>
      */
-    public Builder addCourse(org.example.CourseResponse value) {
+    public Builder addCourse(org.example.Course value) {
       if (courseBuilder_ == null) {
         if (value == null) {
           throw new NullPointerException();
@@ -544,10 +544,10 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>repeated .org.example.CourseResponse course = 1;</code>
+     * <code>repeated .org.example.Course course = 1;</code>
      */
     public Builder addCourse(
-        int index, org.example.CourseResponse value) {
+        int index, org.example.Course value) {
       if (courseBuilder_ == null) {
         if (value == null) {
           throw new NullPointerException();
@@ -561,10 +561,10 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>repeated .org.example.CourseResponse course = 1;</code>
+     * <code>repeated .org.example.Course course = 1;</code>
      */
     public Builder addCourse(
-        org.example.CourseResponse.Builder builderForValue) {
+        org.example.Course.Builder builderForValue) {
       if (courseBuilder_ == null) {
         ensureCourseIsMutable();
         course_.add(builderForValue.build());
@@ -575,10 +575,10 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>repeated .org.example.CourseResponse course = 1;</code>
+     * <code>repeated .org.example.Course course = 1;</code>
      */
     public Builder addCourse(
-        int index, org.example.CourseResponse.Builder builderForValue) {
+        int index, org.example.Course.Builder builderForValue) {
       if (courseBuilder_ == null) {
         ensureCourseIsMutable();
         course_.add(index, builderForValue.build());
@@ -589,10 +589,10 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>repeated .org.example.CourseResponse course = 1;</code>
+     * <code>repeated .org.example.Course course = 1;</code>
      */
     public Builder addAllCourse(
-        java.lang.Iterable<? extends org.example.CourseResponse> values) {
+        java.lang.Iterable<? extends org.example.Course> values) {
       if (courseBuilder_ == null) {
         ensureCourseIsMutable();
         com.google.protobuf.AbstractMessageLite.Builder.addAll(
@@ -604,7 +604,7 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>repeated .org.example.CourseResponse course = 1;</code>
+     * <code>repeated .org.example.Course course = 1;</code>
      */
     public Builder clearCourse() {
       if (courseBuilder_ == null) {
@@ -617,7 +617,7 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>repeated .org.example.CourseResponse course = 1;</code>
+     * <code>repeated .org.example.Course course = 1;</code>
      */
     public Builder removeCourse(int index) {
       if (courseBuilder_ == null) {
@@ -630,16 +630,16 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>repeated .org.example.CourseResponse course = 1;</code>
+     * <code>repeated .org.example.Course course = 1;</code>
      */
-    public org.example.CourseResponse.Builder getCourseBuilder(
+    public org.example.Course.Builder getCourseBuilder(
         int index) {
       return getCourseFieldBuilder().getBuilder(index);
     }
     /**
-     * <code>repeated .org.example.CourseResponse course = 1;</code>
+     * <code>repeated .org.example.Course course = 1;</code>
      */
-    public org.example.CourseResponseOrBuilder getCourseOrBuilder(
+    public org.example.CourseOrBuilder getCourseOrBuilder(
         int index) {
       if (courseBuilder_ == null) {
         return course_.get(index);  } else {
@@ -647,9 +647,9 @@ private static final long serialVersionUID = 0L;
       }
     }
     /**
-     * <code>repeated .org.example.CourseResponse course = 1;</code>
+     * <code>repeated .org.example.Course course = 1;</code>
      */
-    public java.util.List<? extends org.example.CourseResponseOrBuilder> 
+    public java.util.List<? extends org.example.CourseOrBuilder> 
          getCourseOrBuilderList() {
       if (courseBuilder_ != null) {
         return courseBuilder_.getMessageOrBuilderList();
@@ -658,33 +658,33 @@ private static final long serialVersionUID = 0L;
       }
     }
     /**
-     * <code>repeated .org.example.CourseResponse course = 1;</code>
+     * <code>repeated .org.example.Course course = 1;</code>
      */
-    public org.example.CourseResponse.Builder addCourseBuilder() {
+    public org.example.Course.Builder addCourseBuilder() {
       return getCourseFieldBuilder().addBuilder(
-          org.example.CourseResponse.getDefaultInstance());
+          org.example.Course.getDefaultInstance());
     }
     /**
-     * <code>repeated .org.example.CourseResponse course = 1;</code>
+     * <code>repeated .org.example.Course course = 1;</code>
      */
-    public org.example.CourseResponse.Builder addCourseBuilder(
+    public org.example.Course.Builder addCourseBuilder(
         int index) {
       return getCourseFieldBuilder().addBuilder(
-          index, org.example.CourseResponse.getDefaultInstance());
+          index, org.example.Course.getDefaultInstance());
     }
     /**
-     * <code>repeated .org.example.CourseResponse course = 1;</code>
+     * <code>repeated .org.example.Course course = 1;</code>
      */
-    public java.util.List<org.example.CourseResponse.Builder> 
+    public java.util.List<org.example.Course.Builder> 
          getCourseBuilderList() {
       return getCourseFieldBuilder().getBuilderList();
     }
     private com.google.protobuf.RepeatedFieldBuilderV3<
-        org.example.CourseResponse, org.example.CourseResponse.Builder, org.example.CourseResponseOrBuilder> 
+        org.example.Course, org.example.Course.Builder, org.example.CourseOrBuilder> 
         getCourseFieldBuilder() {
       if (courseBuilder_ == null) {
         courseBuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<
-            org.example.CourseResponse, org.example.CourseResponse.Builder, org.example.CourseResponseOrBuilder>(
+            org.example.Course, org.example.Course.Builder, org.example.CourseOrBuilder>(
                 course_,
                 ((bitField0_ & 0x00000001) != 0),
                 getParentForChildren(),

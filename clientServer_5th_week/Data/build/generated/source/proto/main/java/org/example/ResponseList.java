@@ -4,10 +4,6 @@
 package org.example;
 
 /**
- * <pre>
- *기본 응답
- * </pre>
- *
  * Protobuf type {@code org.example.ResponseList}
  */
 public final class ResponseList extends
@@ -295,10 +291,6 @@ private static final long serialVersionUID = 0L;
     return builder;
   }
   /**
-   * <pre>
-   *기본 응답
-   * </pre>
-   *
    * Protobuf type {@code org.example.ResponseList}
    */
   public static final class Builder extends

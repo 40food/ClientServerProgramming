@@ -8,26 +8,26 @@ public interface CourseListResponseOrBuilder extends
     com.google.protobuf.MessageOrBuilder {
 
   /**
-   * <code>repeated .org.example.CourseResponse course = 1;</code>
+   * <code>repeated .org.example.Course course = 1;</code>
    */
-  java.util.List<org.example.CourseResponse> 
+  java.util.List<org.example.Course> 
       getCourseList();
   /**
-   * <code>repeated .org.example.CourseResponse course = 1;</code>
+   * <code>repeated .org.example.Course course = 1;</code>
    */
-  org.example.CourseResponse getCourse(int index);
+  org.example.Course getCourse(int index);
   /**
-   * <code>repeated .org.example.CourseResponse course = 1;</code>
+   * <code>repeated .org.example.Course course = 1;</code>
    */
   int getCourseCount();
   /**
-   * <code>repeated .org.example.CourseResponse course = 1;</code>
+   * <code>repeated .org.example.Course course = 1;</code>
    */
-  java.util.List<? extends org.example.CourseResponseOrBuilder> 
+  java.util.List<? extends org.example.CourseOrBuilder> 
       getCourseOrBuilderList();
   /**
-   * <code>repeated .org.example.CourseResponse course = 1;</code>
+   * <code>repeated .org.example.Course course = 1;</code>
    */
-  org.example.CourseResponseOrBuilder getCourseOrBuilder(
+  org.example.CourseOrBuilder getCourseOrBuilder(
       int index);
 }

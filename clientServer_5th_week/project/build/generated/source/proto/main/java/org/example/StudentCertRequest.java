@@ -5,7 +5,7 @@ package org.example;
 
 /**
  * <pre>
- *로그인 요청 양식
+ *로그인
  * </pre>
  *
  * Protobuf type {@code org.example.StudentCertRequest}
@@ -290,7 +290,7 @@ private static final long serialVersionUID = 0L;
   }
   /**
    * <pre>
-   *로그인 요청 양식
+   *로그인
    * </pre>
    *
    * Protobuf type {@code org.example.StudentCertRequest}

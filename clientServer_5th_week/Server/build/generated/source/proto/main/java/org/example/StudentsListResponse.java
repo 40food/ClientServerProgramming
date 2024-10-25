@@ -41,41 +41,41 @@ private static final long serialVersionUID = 0L;
 
   public static final int STUDENT_FIELD_NUMBER = 1;
   @SuppressWarnings("serial")
-  private java.util.List<org.example.StudentResponse> student_;
+  private java.util.List<org.example.Student> student_;
   /**
-   * <code>repeated .org.example.StudentResponse student = 1;</code>
+   * <code>repeated .org.example.Student student = 1;</code>
    */
   @java.lang.Override
-  public java.util.List<org.example.StudentResponse> getStudentList() {
+  public java.util.List<org.example.Student> getStudentList() {
     return student_;
   }
   /**
-   * <code>repeated .org.example.StudentResponse student = 1;</code>
+   * <code>repeated .org.example.Student student = 1;</code>
    */
   @java.lang.Override
-  public java.util.List<? extends org.example.StudentResponseOrBuilder> 
+  public java.util.List<? extends org.example.StudentOrBuilder> 
       getStudentOrBuilderList() {
     return student_;
   }
   /**
-   * <code>repeated .org.example.StudentResponse student = 1;</code>
+   * <code>repeated .org.example.Student student = 1;</code>
    */
   @java.lang.Override
   public int getStudentCount() {
     return student_.size();
   }
   /**
-   * <code>repeated .org.example.StudentResponse student = 1;</code>
+   * <code>repeated .org.example.Student student = 1;</code>
    */
   @java.lang.Override
-  public org.example.StudentResponse getStudent(int index) {
+  public org.example.Student getStudent(int index) {
     return student_.get(index);
   }
   /**
-   * <code>repeated .org.example.StudentResponse student = 1;</code>
+   * <code>repeated .org.example.Student student = 1;</code>
    */
   @java.lang.Override
-  public org.example.StudentResponseOrBuilder getStudentOrBuilder(
+  public org.example.StudentOrBuilder getStudentOrBuilder(
       int index) {
     return student_.get(index);
   }
@@ -425,9 +425,9 @@ private static final long serialVersionUID = 0L;
               done = true;
               break;
             case 10: {
-              org.example.StudentResponse m =
+              org.example.Student m =
                   input.readMessage(
-                      org.example.StudentResponse.parser(),
+                      org.example.Student.parser(),
                       extensionRegistry);
               if (studentBuilder_ == null) {
                 ensureStudentIsMutable();
@@ -454,22 +454,22 @@ private static final long serialVersionUID = 0L;
     }
     private int bitField0_;
 
-    private java.util.List<org.example.StudentResponse> student_ =
+    private java.util.List<org.example.Student> student_ =
       java.util.Collections.emptyList();
     private void ensureStudentIsMutable() {
       if (!((bitField0_ & 0x00000001) != 0)) {
-        student_ = new java.util.ArrayList<org.example.StudentResponse>(student_);
+        student_ = new java.util.ArrayList<org.example.Student>(student_);
         bitField0_ |= 0x00000001;
        }
     }
 
     private com.google.protobuf.RepeatedFieldBuilderV3<
-        org.example.StudentResponse, org.example.StudentResponse.Builder, org.example.StudentResponseOrBuilder> studentBuilder_;
+        org.example.Student, org.example.Student.Builder, org.example.StudentOrBuilder> studentBuilder_;
 
     /**
-     * <code>repeated .org.example.StudentResponse student = 1;</code>
+     * <code>repeated .org.example.Student student = 1;</code>
      */
-    public java.util.List<org.example.StudentResponse> getStudentList() {
+    public java.util.List<org.example.Student> getStudentList() {
       if (studentBuilder_ == null) {
         return java.util.Collections.unmodifiableList(student_);
       } else {
@@ -477,7 +477,7 @@ private static final long serialVersionUID = 0L;
       }
     }
     /**
-     * <code>repeated .org.example.StudentResponse student = 1;</code>
+     * <code>repeated .org.example.Student student = 1;</code>
      */
     public int getStudentCount() {
       if (studentBuilder_ == null) {
@@ -487,9 +487,9 @@ private static final long serialVersionUID = 0L;
       }
     }
     /**
-     * <code>repeated .org.example.StudentResponse student = 1;</code>
+     * <code>repeated .org.example.Student student = 1;</code>
      */
-    public org.example.StudentResponse getStudent(int index) {
+    public org.example.Student getStudent(int index) {
       if (studentBuilder_ == null) {
         return student_.get(index);
       } else {
@@ -497,10 +497,10 @@ private static final long serialVersionUID = 0L;
       }
     }
     /**
-     * <code>repeated .org.example.StudentResponse student = 1;</code>
+     * <code>repeated .org.example.Student student = 1;</code>
      */
     public Builder setStudent(
-        int index, org.example.StudentResponse value) {
+        int index, org.example.Student value) {
       if (studentBuilder_ == null) {
         if (value == null) {
           throw new NullPointerException();
@@ -514,10 +514,10 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>repeated .org.example.StudentResponse student = 1;</code>
+     * <code>repeated .org.example.Student student = 1;</code>
      */
     public Builder setStudent(
-        int index, org.example.StudentResponse.Builder builderForValue) {
+        int index, org.example.Student.Builder builderForValue) {
       if (studentBuilder_ == null) {
         ensureStudentIsMutable();
         student_.set(index, builderForValue.build());
@@ -528,9 +528,9 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>repeated .org.example.StudentResponse student = 1;</code>
+     * <code>repeated .org.example.Student student = 1;</code>
      */
-    public Builder addStudent(org.example.StudentResponse value) {
+    public Builder addStudent(org.example.Student value) {
       if (studentBuilder_ == null) {
         if (value == null) {
           throw new NullPointerException();
@@ -544,10 +544,10 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>repeated .org.example.StudentResponse student = 1;</code>
+     * <code>repeated .org.example.Student student = 1;</code>
      */
     public Builder addStudent(
-        int index, org.example.StudentResponse value) {
+        int index, org.example.Student value) {
       if (studentBuilder_ == null) {
         if (value == null) {
           throw new NullPointerException();
@@ -561,10 +561,10 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>repeated .org.example.StudentResponse student = 1;</code>
+     * <code>repeated .org.example.Student student = 1;</code>
      */
     public Builder addStudent(
-        org.example.StudentResponse.Builder builderForValue) {
+        org.example.Student.Builder builderForValue) {
       if (studentBuilder_ == null) {
         ensureStudentIsMutable();
         student_.add(builderForValue.build());
@@ -575,10 +575,10 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>repeated .org.example.StudentResponse student = 1;</code>
+     * <code>repeated .org.example.Student student = 1;</code>
      */
     public Builder addStudent(
-        int index, org.example.StudentResponse.Builder builderForValue) {
+        int index, org.example.Student.Builder builderForValue) {
       if (studentBuilder_ == null) {
         ensureStudentIsMutable();
         student_.add(index, builderForValue.build());
@@ -589,10 +589,10 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>repeated .org.example.StudentResponse student = 1;</code>
+     * <code>repeated .org.example.Student student = 1;</code>
      */
     public Builder addAllStudent(
-        java.lang.Iterable<? extends org.example.StudentResponse> values) {
+        java.lang.Iterable<? extends org.example.Student> values) {
       if (studentBuilder_ == null) {
         ensureStudentIsMutable();
         com.google.protobuf.AbstractMessageLite.Builder.addAll(
@@ -604,7 +604,7 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>repeated .org.example.StudentResponse student = 1;</code>
+     * <code>repeated .org.example.Student student = 1;</code>
      */
     public Builder clearStudent() {
       if (studentBuilder_ == null) {
@@ -617,7 +617,7 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>repeated .org.example.StudentResponse student = 1;</code>
+     * <code>repeated .org.example.Student student = 1;</code>
      */
     public Builder removeStudent(int index) {
       if (studentBuilder_ == null) {
@@ -630,16 +630,16 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>repeated .org.example.StudentResponse student = 1;</code>
+     * <code>repeated .org.example.Student student = 1;</code>
      */
-    public org.example.StudentResponse.Builder getStudentBuilder(
+    public org.example.Student.Builder getStudentBuilder(
         int index) {
       return getStudentFieldBuilder().getBuilder(index);
     }
     /**
-     * <code>repeated .org.example.StudentResponse student = 1;</code>
+     * <code>repeated .org.example.Student student = 1;</code>
      */
-    public org.example.StudentResponseOrBuilder getStudentOrBuilder(
+    public org.example.StudentOrBuilder getStudentOrBuilder(
         int index) {
       if (studentBuilder_ == null) {
         return student_.get(index);  } else {
@@ -647,9 +647,9 @@ private static final long serialVersionUID = 0L;
       }
     }
     /**
-     * <code>repeated .org.example.StudentResponse student = 1;</code>
+     * <code>repeated .org.example.Student student = 1;</code>
      */
-    public java.util.List<? extends org.example.StudentResponseOrBuilder> 
+    public java.util.List<? extends org.example.StudentOrBuilder> 
          getStudentOrBuilderList() {
       if (studentBuilder_ != null) {
         return studentBuilder_.getMessageOrBuilderList();
@@ -658,33 +658,33 @@ private static final long serialVersionUID = 0L;
       }
     }
     /**
-     * <code>repeated .org.example.StudentResponse student = 1;</code>
+     * <code>repeated .org.example.Student student = 1;</code>
      */
-    public org.example.StudentResponse.Builder addStudentBuilder() {
+    public org.example.Student.Builder addStudentBuilder() {
       return getStudentFieldBuilder().addBuilder(
-          org.example.StudentResponse.getDefaultInstance());
+          org.example.Student.getDefaultInstance());
     }
     /**
-     * <code>repeated .org.example.StudentResponse student = 1;</code>
+     * <code>repeated .org.example.Student student = 1;</code>
      */
-    public org.example.StudentResponse.Builder addStudentBuilder(
+    public org.example.Student.Builder addStudentBuilder(
         int index) {
       return getStudentFieldBuilder().addBuilder(
-          index, org.example.StudentResponse.getDefaultInstance());
+          index, org.example.Student.getDefaultInstance());
     }
     /**
-     * <code>repeated .org.example.StudentResponse student = 1;</code>
+     * <code>repeated .org.example.Student student = 1;</code>
      */
-    public java.util.List<org.example.StudentResponse.Builder> 
+    public java.util.List<org.example.Student.Builder> 
          getStudentBuilderList() {
       return getStudentFieldBuilder().getBuilderList();
     }
     private com.google.protobuf.RepeatedFieldBuilderV3<
-        org.example.StudentResponse, org.example.StudentResponse.Builder, org.example.StudentResponseOrBuilder> 
+        org.example.Student, org.example.Student.Builder, org.example.StudentOrBuilder> 
         getStudentFieldBuilder() {
       if (studentBuilder_ == null) {
         studentBuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<
-            org.example.StudentResponse, org.example.StudentResponse.Builder, org.example.StudentResponseOrBuilder>(
+            org.example.Student, org.example.Student.Builder, org.example.StudentOrBuilder>(
                 student_,
                 ((bitField0_ & 0x00000001) != 0),
                 getParentForChildren(),

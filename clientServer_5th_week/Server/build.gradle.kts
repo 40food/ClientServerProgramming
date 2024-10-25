@@ -35,6 +35,11 @@ dependencies {
     //SLF4J 오류로 인해 api와 로깅 구현체 추가
     implementation("org.slf4j:slf4j-api:2.0.7")
     implementation("ch.qos.logback:logback-classic:1.4.12")
+
+    //jwt 라이브러리 추가
+    implementation("io.jsonwebtoken:jjwt-api:0.11.5")      // JWT
+    runtimeOnly("io.jsonwebtoken:jjwt-impl:0.11.5")        // JWT 구현체
+    runtimeOnly("io.jsonwebtoken:jjwt-jackson:0.11.5")     // JWT Jackson
 }
 
 protobuf{

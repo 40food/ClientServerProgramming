@@ -35,25 +35,15 @@ public final class ClassSystem {
     com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
       internal_static_org_example_StudentCertRequest_fieldAccessorTable;
   static final com.google.protobuf.Descriptors.Descriptor
-    internal_static_org_example_StudentResponse_descriptor;
+    internal_static_org_example_Student_descriptor;
   static final 
     com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
-      internal_static_org_example_StudentResponse_fieldAccessorTable;
+      internal_static_org_example_Student_fieldAccessorTable;
   static final com.google.protobuf.Descriptors.Descriptor
-    internal_static_org_example_StudentsListResponse_descriptor;
+    internal_static_org_example_Course_descriptor;
   static final 
     com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
-      internal_static_org_example_StudentsListResponse_fieldAccessorTable;
-  static final com.google.protobuf.Descriptors.Descriptor
-    internal_static_org_example_CourseResponse_descriptor;
-  static final 
-    com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
-      internal_static_org_example_CourseResponse_fieldAccessorTable;
-  static final com.google.protobuf.Descriptors.Descriptor
-    internal_static_org_example_CourseListResponse_descriptor;
-  static final 
-    com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
-      internal_static_org_example_CourseListResponse_fieldAccessorTable;
+      internal_static_org_example_Course_fieldAccessorTable;
 
   public static com.google.protobuf.Descriptors.FileDescriptor
       getDescriptor() {
@@ -63,32 +53,32 @@ public final class ClassSystem {
       descriptor;
   static {
     java.lang.String[] descriptorData = {
-      "\n\021ClassSystem.proto\022\013org.example\";\n\007Requ" +
-      "est\022\021\n\trequestId\030\001 \001(\t\022\014\n\004type\030\002 \001(\t\022\017\n\007" +
-      "payload\030\003 \001(\t\".\n\014ResponseList\022\014\n\004type\030\001 " +
-      "\001(\t\022\020\n\010Response\030\002 \003(\t\"\033\n\010Response\022\017\n\007mes" +
-      "sage\030\001 \001(\t\",\n\022StudentCertRequest\022\n\n\002id\030\001" +
-      " \001(\t\022\n\n\002pw\030\002 \001(\t\"S\n\017StudentResponse\022\n\n\002i" +
-      "d\030\001 \001(\t\022\014\n\004name\030\002 \001(\t\022\022\n\ndepartment\030\003 \001(" +
-      "\t\022\022\n\ncourseList\030\004 \003(\t\"E\n\024StudentsListRes" +
-      "ponse\022-\n\007student\030\001 \003(\0132\034.org.example.Stu" +
-      "dentResponse\"T\n\016CourseResponse\022\n\n\002id\030\001 \001" +
-      "(\t\022\021\n\tprofessor\030\002 \001(\t\022\021\n\tclassName\030\003 \001(\t" +
-      "\022\020\n\010preClass\030\004 \003(\t\"A\n\022CourseListResponse" +
-      "\022+\n\006course\030\001 \003(\0132\033.org.example.CourseRes" +
-      "ponse2\332\003\n\013DataService\0226\n\007request\022\024.org.e" +
-      "xample.Request\032\025.org.example.Response\022?\n" +
-      "\014multiRequest\022\024.org.example.Request\032\031.or" +
-      "g.example.ResponseList\022F\n\005login\022\037.org.ex" +
-      "ample.StudentCertRequest\032\034.org.example.S" +
-      "tudentResponse\022I\n\016getStudentList\022\024.org.e" +
-      "xample.Request\032!.org.example.StudentsLis" +
-      "tResponse\022F\n\rgetCourseList\022\024.org.example" +
-      ".Request\032\037.org.example.CourseListRespons" +
-      "e\0229\n\naddStudent\022\024.org.example.Request\032\025." +
-      "org.example.Response\022<\n\rdeleteStudent\022\024." +
-      "org.example.Request\032\025.org.example.Respon" +
-      "seB\002P\001b\006proto3"
+      "\n\021ClassSystem.proto\022\013org.example\"7\n\007Requ" +
+      "est\022\r\n\005token\030\001 \001(\t\022\014\n\004type\030\002 \001(\t\022\017\n\007payl" +
+      "oad\030\003 \001(\t\".\n\014ResponseList\022\014\n\004type\030\001 \001(\t\022" +
+      "\020\n\010Response\030\002 \003(\t\"\033\n\010Response\022\017\n\007message" +
+      "\030\001 \001(\t\",\n\022StudentCertRequest\022\n\n\002id\030\001 \001(\t" +
+      "\022\n\n\002pw\030\002 \001(\t\"y\n\007Student\022\021\n\tstudentId\030\001 \001" +
+      "(\t\022\014\n\004name\030\002 \001(\t\022\022\n\ndepartment\030\003 \001(\t\022\022\n\n" +
+      "courseList\030\004 \003(\t\022\n\n\002id\030\005 \001(\t\022\n\n\002pw\030\006 \001(\t" +
+      "\022\r\n\005token\030\007 \001(\t\"[\n\006Course\022\n\n\002id\030\001 \001(\t\022\021\n" +
+      "\tprofessor\030\002 \001(\t\022\021\n\tclassName\030\003 \001(\t\022\020\n\010p" +
+      "reClass\030\004 \003(\t\022\r\n\005token\030\005 \001(\t2N\n\013DataServ" +
+      "ice\022?\n\005login\022\037.org.example.StudentCertRe" +
+      "quest\032\025.org.example.Response2\314\001\n\016Student" +
+      "Service\022A\n\016getStudentList\022\024.org.example." +
+      "Request\032\031.org.example.ResponseList\0229\n\nad" +
+      "dStudent\022\024.org.example.Student\032\025.org.exa" +
+      "mple.Response\022<\n\rdeleteStudent\022\024.org.exa" +
+      "mple.Request\032\025.org.example.Response2\307\001\n\r" +
+      "CourseService\022@\n\rgetCourseList\022\024.org.exa" +
+      "mple.Request\032\031.org.example.ResponseList\022" +
+      "7\n\taddCourse\022\023.org.example.Course\032\025.org." +
+      "example.Response\022;\n\014deleteCourse\022\024.org.e" +
+      "xample.Request\032\025.org.example.Response2R\n" +
+      "\023RegistrationService\022;\n\014registration\022\024.o" +
+      "rg.example.Request\032\025.org.example.Respons" +
+      "eB\002P\001b\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
@@ -99,7 +89,7 @@ public final class ClassSystem {
     internal_static_org_example_Request_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_org_example_Request_descriptor,
-        new java.lang.String[] { "RequestId", "Type", "Payload", });
+        new java.lang.String[] { "Token", "Type", "Payload", });
     internal_static_org_example_ResponseList_descriptor =
       getDescriptor().getMessageTypes().get(1);
     internal_static_org_example_ResponseList_fieldAccessorTable = new
@@ -118,30 +108,18 @@ public final class ClassSystem {
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_org_example_StudentCertRequest_descriptor,
         new java.lang.String[] { "Id", "Pw", });
-    internal_static_org_example_StudentResponse_descriptor =
+    internal_static_org_example_Student_descriptor =
       getDescriptor().getMessageTypes().get(4);
-    internal_static_org_example_StudentResponse_fieldAccessorTable = new
+    internal_static_org_example_Student_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
-        internal_static_org_example_StudentResponse_descriptor,
-        new java.lang.String[] { "Id", "Name", "Department", "CourseList", });
-    internal_static_org_example_StudentsListResponse_descriptor =
+        internal_static_org_example_Student_descriptor,
+        new java.lang.String[] { "StudentId", "Name", "Department", "CourseList", "Id", "Pw", "Token", });
+    internal_static_org_example_Course_descriptor =
       getDescriptor().getMessageTypes().get(5);
-    internal_static_org_example_StudentsListResponse_fieldAccessorTable = new
+    internal_static_org_example_Course_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
-        internal_static_org_example_StudentsListResponse_descriptor,
-        new java.lang.String[] { "Student", });
-    internal_static_org_example_CourseResponse_descriptor =
-      getDescriptor().getMessageTypes().get(6);
-    internal_static_org_example_CourseResponse_fieldAccessorTable = new
-      com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
-        internal_static_org_example_CourseResponse_descriptor,
-        new java.lang.String[] { "Id", "Professor", "ClassName", "PreClass", });
-    internal_static_org_example_CourseListResponse_descriptor =
-      getDescriptor().getMessageTypes().get(7);
-    internal_static_org_example_CourseListResponse_fieldAccessorTable = new
-      com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
-        internal_static_org_example_CourseListResponse_descriptor,
-        new java.lang.String[] { "Course", });
+        internal_static_org_example_Course_descriptor,
+        new java.lang.String[] { "Id", "Professor", "ClassName", "PreClass", "Token", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

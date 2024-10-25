@@ -30,15 +30,7 @@ public class Course implements Serializable{
     		this.preClass.add(stringTokenizer.nextToken());
     	}
     }
-    public boolean match(String studentId) {
-        return this.courseId.equals(studentId);
-    }
-    public String getName() {
-        return this.courseName;
-    }
-    public ArrayList<String> getPrerequisiteCourses() {
-        return this.preClass;
-    }
+
     public String toString() {
         String stringReturn = this.courseId + " " + this.professor + " " + this.courseName;
         for (int i = 0; i < this.preClass.size(); i++) {

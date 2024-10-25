@@ -8,26 +8,26 @@ public interface StudentsListResponseOrBuilder extends
     com.google.protobuf.MessageOrBuilder {
 
   /**
-   * <code>repeated .org.example.StudentResponse student = 1;</code>
+   * <code>repeated .org.example.Student student = 1;</code>
    */
-  java.util.List<org.example.StudentResponse> 
+  java.util.List<org.example.Student> 
       getStudentList();
   /**
-   * <code>repeated .org.example.StudentResponse student = 1;</code>
+   * <code>repeated .org.example.Student student = 1;</code>
    */
-  org.example.StudentResponse getStudent(int index);
+  org.example.Student getStudent(int index);
   /**
-   * <code>repeated .org.example.StudentResponse student = 1;</code>
+   * <code>repeated .org.example.Student student = 1;</code>
    */
   int getStudentCount();
   /**
-   * <code>repeated .org.example.StudentResponse student = 1;</code>
+   * <code>repeated .org.example.Student student = 1;</code>
    */
-  java.util.List<? extends org.example.StudentResponseOrBuilder> 
+  java.util.List<? extends org.example.StudentOrBuilder> 
       getStudentOrBuilderList();
   /**
-   * <code>repeated .org.example.StudentResponse student = 1;</code>
+   * <code>repeated .org.example.Student student = 1;</code>
    */
-  org.example.StudentResponseOrBuilder getStudentOrBuilder(
+  org.example.StudentOrBuilder getStudentOrBuilder(
       int index);
 }

@@ -20,11 +20,13 @@ private static final long serialVersionUID = 0L;
     super(builder);
   }
   private StudentResponse() {
-    id_ = "";
+    studentId_ = "";
     name_ = "";
     department_ = "";
     courseList_ =
         com.google.protobuf.LazyStringArrayList.emptyList();
+    id_ = "";
+    pw_ = "";
   }
 
   @java.lang.Override
@@ -47,39 +49,39 @@ private static final long serialVersionUID = 0L;
             org.example.StudentResponse.class, org.example.StudentResponse.Builder.class);
   }
 
-  public static final int ID_FIELD_NUMBER = 1;
+  public static final int STUDENTID_FIELD_NUMBER = 1;
   @SuppressWarnings("serial")
-  private volatile java.lang.Object id_ = "";
+  private volatile java.lang.Object studentId_ = "";
   /**
-   * <code>string id = 1;</code>
-   * @return The id.
+   * <code>string studentId = 1;</code>
+   * @return The studentId.
    */
   @java.lang.Override
-  public java.lang.String getId() {
-    java.lang.Object ref = id_;
+  public java.lang.String getStudentId() {
+    java.lang.Object ref = studentId_;
     if (ref instanceof java.lang.String) {
       return (java.lang.String) ref;
     } else {
       com.google.protobuf.ByteString bs = 
           (com.google.protobuf.ByteString) ref;
       java.lang.String s = bs.toStringUtf8();
-      id_ = s;
+      studentId_ = s;
       return s;
     }
   }
   /**
-   * <code>string id = 1;</code>
-   * @return The bytes for id.
+   * <code>string studentId = 1;</code>
+   * @return The bytes for studentId.
    */
   @java.lang.Override
   public com.google.protobuf.ByteString
-      getIdBytes() {
-    java.lang.Object ref = id_;
+      getStudentIdBytes() {
+    java.lang.Object ref = studentId_;
     if (ref instanceof java.lang.String) {
       com.google.protobuf.ByteString b = 
           com.google.protobuf.ByteString.copyFromUtf8(
               (java.lang.String) ref);
-      id_ = b;
+      studentId_ = b;
       return b;
     } else {
       return (com.google.protobuf.ByteString) ref;
@@ -201,6 +203,84 @@ private static final long serialVersionUID = 0L;
     return courseList_.getByteString(index);
   }
 
+  public static final int ID_FIELD_NUMBER = 5;
+  @SuppressWarnings("serial")
+  private volatile java.lang.Object id_ = "";
+  /**
+   * <code>string id = 5;</code>
+   * @return The id.
+   */
+  @java.lang.Override
+  public java.lang.String getId() {
+    java.lang.Object ref = id_;
+    if (ref instanceof java.lang.String) {
+      return (java.lang.String) ref;
+    } else {
+      com.google.protobuf.ByteString bs = 
+          (com.google.protobuf.ByteString) ref;
+      java.lang.String s = bs.toStringUtf8();
+      id_ = s;
+      return s;
+    }
+  }
+  /**
+   * <code>string id = 5;</code>
+   * @return The bytes for id.
+   */
+  @java.lang.Override
+  public com.google.protobuf.ByteString
+      getIdBytes() {
+    java.lang.Object ref = id_;
+    if (ref instanceof java.lang.String) {
+      com.google.protobuf.ByteString b = 
+          com.google.protobuf.ByteString.copyFromUtf8(
+              (java.lang.String) ref);
+      id_ = b;
+      return b;
+    } else {
+      return (com.google.protobuf.ByteString) ref;
+    }
+  }
+
+  public static final int PW_FIELD_NUMBER = 6;
+  @SuppressWarnings("serial")
+  private volatile java.lang.Object pw_ = "";
+  /**
+   * <code>string pw = 6;</code>
+   * @return The pw.
+   */
+  @java.lang.Override
+  public java.lang.String getPw() {
+    java.lang.Object ref = pw_;
+    if (ref instanceof java.lang.String) {
+      return (java.lang.String) ref;
+    } else {
+      com.google.protobuf.ByteString bs = 
+          (com.google.protobuf.ByteString) ref;
+      java.lang.String s = bs.toStringUtf8();
+      pw_ = s;
+      return s;
+    }
+  }
+  /**
+   * <code>string pw = 6;</code>
+   * @return The bytes for pw.
+   */
+  @java.lang.Override
+  public com.google.protobuf.ByteString
+      getPwBytes() {
+    java.lang.Object ref = pw_;
+    if (ref instanceof java.lang.String) {
+      com.google.protobuf.ByteString b = 
+          com.google.protobuf.ByteString.copyFromUtf8(
+              (java.lang.String) ref);
+      pw_ = b;
+      return b;
+    } else {
+      return (com.google.protobuf.ByteString) ref;
+    }
+  }
+
   private byte memoizedIsInitialized = -1;
   @java.lang.Override
   public final boolean isInitialized() {
@@ -215,8 +295,8 @@ private static final long serialVersionUID = 0L;
   @java.lang.Override
   public void writeTo(com.google.protobuf.CodedOutputStream output)
                       throws java.io.IOException {
-    if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(id_)) {
-      com.google.protobuf.GeneratedMessageV3.writeString(output, 1, id_);
+    if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(studentId_)) {
+      com.google.protobuf.GeneratedMessageV3.writeString(output, 1, studentId_);
     }
     if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(name_)) {
       com.google.protobuf.GeneratedMessageV3.writeString(output, 2, name_);
@@ -227,6 +307,12 @@ private static final long serialVersionUID = 0L;
     for (int i = 0; i < courseList_.size(); i++) {
       com.google.protobuf.GeneratedMessageV3.writeString(output, 4, courseList_.getRaw(i));
     }
+    if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(id_)) {
+      com.google.protobuf.GeneratedMessageV3.writeString(output, 5, id_);
+    }
+    if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(pw_)) {
+      com.google.protobuf.GeneratedMessageV3.writeString(output, 6, pw_);
+    }
     getUnknownFields().writeTo(output);
   }
 
@@ -236,8 +322,8 @@ private static final long serialVersionUID = 0L;
     if (size != -1) return size;
 
     size = 0;
-    if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(id_)) {
-      size += com.google.protobuf.GeneratedMessageV3.computeStringSize(1, id_);
+    if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(studentId_)) {
+      size += com.google.protobuf.GeneratedMessageV3.computeStringSize(1, studentId_);
     }
     if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(name_)) {
       size += com.google.protobuf.GeneratedMessageV3.computeStringSize(2, name_);
@@ -252,6 +338,12 @@ private static final long serialVersionUID = 0L;
       }
       size += dataSize;
       size += 1 * getCourseListList().size();
+    }
+    if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(id_)) {
+      size += com.google.protobuf.GeneratedMessageV3.computeStringSize(5, id_);
+    }
+    if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(pw_)) {
+      size += com.google.protobuf.GeneratedMessageV3.computeStringSize(6, pw_);
     }
     size += getUnknownFields().getSerializedSize();
     memoizedSize = size;
@@ -268,14 +360,18 @@ private static final long serialVersionUID = 0L;
     }
     org.example.StudentResponse other = (org.example.StudentResponse) obj;
 
-    if (!getId()
-        .equals(other.getId())) return false;
+    if (!getStudentId()
+        .equals(other.getStudentId())) return false;
     if (!getName()
         .equals(other.getName())) return false;
     if (!getDepartment()
         .equals(other.getDepartment())) return false;
     if (!getCourseListList()
         .equals(other.getCourseListList())) return false;
+    if (!getId()
+        .equals(other.getId())) return false;
+    if (!getPw()
+        .equals(other.getPw())) return false;
     if (!getUnknownFields().equals(other.getUnknownFields())) return false;
     return true;
   }
@@ -287,8 +383,8 @@ private static final long serialVersionUID = 0L;
     }
     int hash = 41;
     hash = (19 * hash) + getDescriptor().hashCode();
-    hash = (37 * hash) + ID_FIELD_NUMBER;
-    hash = (53 * hash) + getId().hashCode();
+    hash = (37 * hash) + STUDENTID_FIELD_NUMBER;
+    hash = (53 * hash) + getStudentId().hashCode();
     hash = (37 * hash) + NAME_FIELD_NUMBER;
     hash = (53 * hash) + getName().hashCode();
     hash = (37 * hash) + DEPARTMENT_FIELD_NUMBER;
@@ -297,6 +393,10 @@ private static final long serialVersionUID = 0L;
       hash = (37 * hash) + COURSELIST_FIELD_NUMBER;
       hash = (53 * hash) + getCourseListList().hashCode();
     }
+    hash = (37 * hash) + ID_FIELD_NUMBER;
+    hash = (53 * hash) + getId().hashCode();
+    hash = (37 * hash) + PW_FIELD_NUMBER;
+    hash = (53 * hash) + getPw().hashCode();
     hash = (29 * hash) + getUnknownFields().hashCode();
     memoizedHashCode = hash;
     return hash;
@@ -432,11 +532,13 @@ private static final long serialVersionUID = 0L;
     public Builder clear() {
       super.clear();
       bitField0_ = 0;
-      id_ = "";
+      studentId_ = "";
       name_ = "";
       department_ = "";
       courseList_ =
           com.google.protobuf.LazyStringArrayList.emptyList();
+      id_ = "";
+      pw_ = "";
       return this;
     }
 
@@ -471,7 +573,7 @@ private static final long serialVersionUID = 0L;
     private void buildPartial0(org.example.StudentResponse result) {
       int from_bitField0_ = bitField0_;
       if (((from_bitField0_ & 0x00000001) != 0)) {
-        result.id_ = id_;
+        result.studentId_ = studentId_;
       }
       if (((from_bitField0_ & 0x00000002) != 0)) {
         result.name_ = name_;
@@ -482,6 +584,12 @@ private static final long serialVersionUID = 0L;
       if (((from_bitField0_ & 0x00000008) != 0)) {
         courseList_.makeImmutable();
         result.courseList_ = courseList_;
+      }
+      if (((from_bitField0_ & 0x00000010) != 0)) {
+        result.id_ = id_;
+      }
+      if (((from_bitField0_ & 0x00000020) != 0)) {
+        result.pw_ = pw_;
       }
     }
 
@@ -529,8 +637,8 @@ private static final long serialVersionUID = 0L;
 
     public Builder mergeFrom(org.example.StudentResponse other) {
       if (other == org.example.StudentResponse.getDefaultInstance()) return this;
-      if (!other.getId().isEmpty()) {
-        id_ = other.id_;
+      if (!other.getStudentId().isEmpty()) {
+        studentId_ = other.studentId_;
         bitField0_ |= 0x00000001;
         onChanged();
       }
@@ -552,6 +660,16 @@ private static final long serialVersionUID = 0L;
           ensureCourseListIsMutable();
           courseList_.addAll(other.courseList_);
         }
+        onChanged();
+      }
+      if (!other.getId().isEmpty()) {
+        id_ = other.id_;
+        bitField0_ |= 0x00000010;
+        onChanged();
+      }
+      if (!other.getPw().isEmpty()) {
+        pw_ = other.pw_;
+        bitField0_ |= 0x00000020;
         onChanged();
       }
       this.mergeUnknownFields(other.getUnknownFields());
@@ -581,7 +699,7 @@ private static final long serialVersionUID = 0L;
               done = true;
               break;
             case 10: {
-              id_ = input.readStringRequireUtf8();
+              studentId_ = input.readStringRequireUtf8();
               bitField0_ |= 0x00000001;
               break;
             } // case 10
@@ -601,6 +719,16 @@ private static final long serialVersionUID = 0L;
               courseList_.add(s);
               break;
             } // case 34
+            case 42: {
+              id_ = input.readStringRequireUtf8();
+              bitField0_ |= 0x00000010;
+              break;
+            } // case 42
+            case 50: {
+              pw_ = input.readStringRequireUtf8();
+              bitField0_ |= 0x00000020;
+              break;
+            } // case 50
             default: {
               if (!super.parseUnknownField(input, extensionRegistry, tag)) {
                 done = true; // was an endgroup tag
@@ -618,73 +746,73 @@ private static final long serialVersionUID = 0L;
     }
     private int bitField0_;
 
-    private java.lang.Object id_ = "";
+    private java.lang.Object studentId_ = "";
     /**
-     * <code>string id = 1;</code>
-     * @return The id.
+     * <code>string studentId = 1;</code>
+     * @return The studentId.
      */
-    public java.lang.String getId() {
-      java.lang.Object ref = id_;
+    public java.lang.String getStudentId() {
+      java.lang.Object ref = studentId_;
       if (!(ref instanceof java.lang.String)) {
         com.google.protobuf.ByteString bs =
             (com.google.protobuf.ByteString) ref;
         java.lang.String s = bs.toStringUtf8();
-        id_ = s;
+        studentId_ = s;
         return s;
       } else {
         return (java.lang.String) ref;
       }
     }
     /**
-     * <code>string id = 1;</code>
-     * @return The bytes for id.
+     * <code>string studentId = 1;</code>
+     * @return The bytes for studentId.
      */
     public com.google.protobuf.ByteString
-        getIdBytes() {
-      java.lang.Object ref = id_;
+        getStudentIdBytes() {
+      java.lang.Object ref = studentId_;
       if (ref instanceof String) {
         com.google.protobuf.ByteString b = 
             com.google.protobuf.ByteString.copyFromUtf8(
                 (java.lang.String) ref);
-        id_ = b;
+        studentId_ = b;
         return b;
       } else {
         return (com.google.protobuf.ByteString) ref;
       }
     }
     /**
-     * <code>string id = 1;</code>
-     * @param value The id to set.
+     * <code>string studentId = 1;</code>
+     * @param value The studentId to set.
      * @return This builder for chaining.
      */
-    public Builder setId(
+    public Builder setStudentId(
         java.lang.String value) {
       if (value == null) { throw new NullPointerException(); }
-      id_ = value;
+      studentId_ = value;
       bitField0_ |= 0x00000001;
       onChanged();
       return this;
     }
     /**
-     * <code>string id = 1;</code>
+     * <code>string studentId = 1;</code>
      * @return This builder for chaining.
      */
-    public Builder clearId() {
-      id_ = getDefaultInstance().getId();
+    public Builder clearStudentId() {
+      studentId_ = getDefaultInstance().getStudentId();
       bitField0_ = (bitField0_ & ~0x00000001);
       onChanged();
       return this;
     }
     /**
-     * <code>string id = 1;</code>
-     * @param value The bytes for id to set.
+     * <code>string studentId = 1;</code>
+     * @param value The bytes for studentId to set.
      * @return This builder for chaining.
      */
-    public Builder setIdBytes(
+    public Builder setStudentIdBytes(
         com.google.protobuf.ByteString value) {
       if (value == null) { throw new NullPointerException(); }
       checkByteStringIsUtf8(value);
-      id_ = value;
+      studentId_ = value;
       bitField0_ |= 0x00000001;
       onChanged();
       return this;
@@ -941,6 +1069,150 @@ private static final long serialVersionUID = 0L;
       ensureCourseListIsMutable();
       courseList_.add(value);
       bitField0_ |= 0x00000008;
+      onChanged();
+      return this;
+    }
+
+    private java.lang.Object id_ = "";
+    /**
+     * <code>string id = 5;</code>
+     * @return The id.
+     */
+    public java.lang.String getId() {
+      java.lang.Object ref = id_;
+      if (!(ref instanceof java.lang.String)) {
+        com.google.protobuf.ByteString bs =
+            (com.google.protobuf.ByteString) ref;
+        java.lang.String s = bs.toStringUtf8();
+        id_ = s;
+        return s;
+      } else {
+        return (java.lang.String) ref;
+      }
+    }
+    /**
+     * <code>string id = 5;</code>
+     * @return The bytes for id.
+     */
+    public com.google.protobuf.ByteString
+        getIdBytes() {
+      java.lang.Object ref = id_;
+      if (ref instanceof String) {
+        com.google.protobuf.ByteString b = 
+            com.google.protobuf.ByteString.copyFromUtf8(
+                (java.lang.String) ref);
+        id_ = b;
+        return b;
+      } else {
+        return (com.google.protobuf.ByteString) ref;
+      }
+    }
+    /**
+     * <code>string id = 5;</code>
+     * @param value The id to set.
+     * @return This builder for chaining.
+     */
+    public Builder setId(
+        java.lang.String value) {
+      if (value == null) { throw new NullPointerException(); }
+      id_ = value;
+      bitField0_ |= 0x00000010;
+      onChanged();
+      return this;
+    }
+    /**
+     * <code>string id = 5;</code>
+     * @return This builder for chaining.
+     */
+    public Builder clearId() {
+      id_ = getDefaultInstance().getId();
+      bitField0_ = (bitField0_ & ~0x00000010);
+      onChanged();
+      return this;
+    }
+    /**
+     * <code>string id = 5;</code>
+     * @param value The bytes for id to set.
+     * @return This builder for chaining.
+     */
+    public Builder setIdBytes(
+        com.google.protobuf.ByteString value) {
+      if (value == null) { throw new NullPointerException(); }
+      checkByteStringIsUtf8(value);
+      id_ = value;
+      bitField0_ |= 0x00000010;
+      onChanged();
+      return this;
+    }
+
+    private java.lang.Object pw_ = "";
+    /**
+     * <code>string pw = 6;</code>
+     * @return The pw.
+     */
+    public java.lang.String getPw() {
+      java.lang.Object ref = pw_;
+      if (!(ref instanceof java.lang.String)) {
+        com.google.protobuf.ByteString bs =
+            (com.google.protobuf.ByteString) ref;
+        java.lang.String s = bs.toStringUtf8();
+        pw_ = s;
+        return s;
+      } else {
+        return (java.lang.String) ref;
+      }
+    }
+    /**
+     * <code>string pw = 6;</code>
+     * @return The bytes for pw.
+     */
+    public com.google.protobuf.ByteString
+        getPwBytes() {
+      java.lang.Object ref = pw_;
+      if (ref instanceof String) {
+        com.google.protobuf.ByteString b = 
+            com.google.protobuf.ByteString.copyFromUtf8(
+                (java.lang.String) ref);
+        pw_ = b;
+        return b;
+      } else {
+        return (com.google.protobuf.ByteString) ref;
+      }
+    }
+    /**
+     * <code>string pw = 6;</code>
+     * @param value The pw to set.
+     * @return This builder for chaining.
+     */
+    public Builder setPw(
+        java.lang.String value) {
+      if (value == null) { throw new NullPointerException(); }
+      pw_ = value;
+      bitField0_ |= 0x00000020;
+      onChanged();
+      return this;
+    }
+    /**
+     * <code>string pw = 6;</code>
+     * @return This builder for chaining.
+     */
+    public Builder clearPw() {
+      pw_ = getDefaultInstance().getPw();
+      bitField0_ = (bitField0_ & ~0x00000020);
+      onChanged();
+      return this;
+    }
+    /**
+     * <code>string pw = 6;</code>
+     * @param value The bytes for pw to set.
+     * @return This builder for chaining.
+     */
+    public Builder setPwBytes(
+        com.google.protobuf.ByteString value) {
+      if (value == null) { throw new NullPointerException(); }
+      checkByteStringIsUtf8(value);
+      pw_ = value;
+      bitField0_ |= 0x00000020;
       onChanged();
       return this;
     }

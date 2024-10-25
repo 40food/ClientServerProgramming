@@ -4,14 +4,12 @@ public class InvalidValueException extends Exception{
     private int statusCode;
 
     //constructor
-    public InvalidValueException(String message, int statusCode){
-        super(message);
-        this.statusCode=statusCode;
+    public InvalidValueException(ErrorList errorList){
+        super(errorList.getMessage());
+        this.statusCode=errorList.getState();
     }
 
-    public int getStatusCode(){
-        return statusCode;
-    }
+    public int getStatusCode() {return statusCode;}
 
     @Override
     public String toString(){

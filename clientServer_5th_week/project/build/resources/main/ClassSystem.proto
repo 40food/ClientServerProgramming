@@ -6,13 +6,12 @@ package org.example;//생성된 자바 클래스들에서 사용하길 원하는
 //./gradlew build
 //gradle bulid
 
-//기본 요청
+//기본
 message Request{
-  string requestId=1;
+  string token=1;
   string type=2;
   string payload=3;
 }
-//기본 응답
 message ResponseList{
   string type=1;
   repeated string Response=2;
@@ -21,44 +20,44 @@ message Response{
   string message=1;
 }
 
-//로그인 요청 양식
+//로그인
 message StudentCertRequest{
   string id=1;
   string pw=2;
 }
-//학생 응답
-message StudentResponse{
-  string id=1;
+
+//학생
+message Student{
+  string studentId=1;
   string name=2;
   string department=3;
   repeated string courseList=4;
+  string id=5;
+  string pw=6;
+  string token=7;
 }
-message StudentsListResponse{
-  repeated StudentResponse student=1;
-}
-//과목 응답
-message CourseResponse{
+message Course{
   string id=1;
   string professor=2;
   string className=3;
   repeated string preClass=4;
-}
-message CourseListResponse{
-  repeated CourseResponse course=1;
+  string token=5;
 }
 
 //서비스 협약Contract 정의
 service DataService{
-  //client-server
-  rpc request(Request) returns(Response);
-  rpc multiRequest(Request) returns(ResponseList);
-
-  //client-server, server-data
-  rpc login(StudentCertRequest) returns(StudentResponse);
-
-  //server-data
-  rpc getStudentList(Request) returns (StudentsListResponse);
-  rpc getCourseList(Request) returns (CourseListResponse);
-  rpc addStudent(Request) returns (Response);
-  rpc deleteStudent(Request) returns (Response);
+  rpc login(StudentCertRequest) returns(Response);
+}
+service StudentService{
+  rpc getStudentList(Request) returns(ResponseList);
+  rpc addStudent(Student) returns(Response);
+  rpc deleteStudent(Request) returns(Response);
+}
+service CourseService{
+  rpc getCourseList(Request) returns(ResponseList);
+  rpc addCourse(Course) returns(Response);
+  rpc deleteCourse(Request) returns(Response);
+}
+service RegistrationService{
+  rpc registration(Request) returns(Response);
 }

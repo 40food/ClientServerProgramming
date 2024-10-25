@@ -8,16 +8,16 @@ public interface StudentResponseOrBuilder extends
     com.google.protobuf.MessageOrBuilder {
 
   /**
-   * <code>string id = 1;</code>
-   * @return The id.
+   * <code>string studentId = 1;</code>
+   * @return The studentId.
    */
-  java.lang.String getId();
+  java.lang.String getStudentId();
   /**
-   * <code>string id = 1;</code>
-   * @return The bytes for id.
+   * <code>string studentId = 1;</code>
+   * @return The bytes for studentId.
    */
   com.google.protobuf.ByteString
-      getIdBytes();
+      getStudentIdBytes();
 
   /**
    * <code>string name = 2;</code>
@@ -67,4 +67,28 @@ public interface StudentResponseOrBuilder extends
    */
   com.google.protobuf.ByteString
       getCourseListBytes(int index);
+
+  /**
+   * <code>string id = 5;</code>
+   * @return The id.
+   */
+  java.lang.String getId();
+  /**
+   * <code>string id = 5;</code>
+   * @return The bytes for id.
+   */
+  com.google.protobuf.ByteString
+      getIdBytes();
+
+  /**
+   * <code>string pw = 6;</code>
+   * @return The pw.
+   */
+  java.lang.String getPw();
+  /**
+   * <code>string pw = 6;</code>
+   * @return The bytes for pw.
+   */
+  com.google.protobuf.ByteString
+      getPwBytes();
 }

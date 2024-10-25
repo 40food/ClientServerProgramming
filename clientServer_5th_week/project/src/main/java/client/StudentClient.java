@@ -1,25 +1,25 @@
 package client;
 
 import client.exception.CommonException;
-import io.grpc.Metadata;
 import org.example.*;
 
+import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.Scanner;
 
 public class StudentClient {
-    private static Metadata metaData;
-    private DataServiceGrpc.DataServiceBlockingStub stub;
+    private StudentServiceGrpc.StudentServiceBlockingStub studentStub;
     private Scanner scanner;
 
-    public StudentClient(Scanner scanner,DataServiceGrpc.DataServiceBlockingStub stub) {
+    public StudentClient(Scanner scanner, StudentServiceGrpc.StudentServiceBlockingStub sStub) {
         this.scanner=scanner;
-        this.stub=stub;
+        this.studentStub=sStub;
     }
 
-    public void getAllStudent(String id){
+    public void getAllStudent(String token){
         try{
-            ResponseList studentList=stub.multiRequest(Request.newBuilder()
-                    .setRequestId(id)
+            ResponseList studentList=studentStub.getStudentList(Request.newBuilder()
+                    .setToken(token)
                     .setType("전체학생 불러오기")
                     .build());
 
@@ -31,56 +31,38 @@ public class StudentClient {
         }
     }
 
-    public StudentResponse login() {
-        try{
-            System.out.println("========로그인을 진행해주세요.========");
-            System.out.print("id:");
-            String id=scanner.next();
-            System.out.print("pw:");
-            String pw=scanner.next();
-            StudentResponse student=stub.login(StudentCertRequest.newBuilder()
-                    .setId(id)
-                    .setPw(pw)
-                    .build());
-            if(student!=null){
-                System.out.println("로그인 성공");
-                System.out.println("현재 사용자: "+student.getName()+"\n");
-                return student;
-            }
-        }catch (Exception e) {
-            System.out.println("로그인 실패");
-//            CommonException.handleRpcException(e);
-        }
-        return null;
-    }
-
-    public void addStudent(String userid) {
+    public void addStudent(String token) {
         try{
             System.out.println("========추가할 학생 정보를 입력해주세요.========");
-            System.out.print("ID:"); String id=scanner.next();
-            System.out.print("PW:"); String pw=scanner.next();
-            System.out.print("Student ID:"); String studentId=scanner.next();
-            System.out.print("Name:"); String name=scanner.next();
-            System.out.print("Department:"); String dept=scanner.next(); scanner.nextLine();
-            System.out.print("completed course(띄어쓰기로 구분):"); String completedCourse=scanner.nextLine();
-            Response response=stub.request(Request.newBuilder()
-                    .setRequestId(userid)
-                    .setType("학생 추가하기")
-                    .setPayload(id+" "+pw+" "+studentId+" "+name+" "+dept+" "+completedCourse)
-                    .build());
+            System.out.print("아이디:"); String id=scanner.next();
+            System.out.print("비밀번호:"); String pw=scanner.next();
+            System.out.print("학생ID:"); String studentId=scanner.next();
+            System.out.print("이름:"); String name=scanner.next();
+            System.out.print("학과:"); String dept=scanner.next(); scanner.nextLine();
+            System.out.print("수강 과목(띄어쓰기로 구분):"); String courses=scanner.nextLine();
+            ArrayList<String> completedCourses=new ArrayList<>(Arrays.asList(courses.split(" ")));
+            Response response=studentStub.addStudent(Student.newBuilder()
+                            .setStudentId(studentId)
+                            .setName(name)
+                            .setDepartment(dept)
+                            .addAllCourseList(completedCourses)
+                            .setToken(token)
+                            .setId(id)
+                            .setPw(pw)
+                            .build());
             System.out.println(response.getMessage());
         }catch (Exception e){
             CommonException.handleRpcException(e);
         }
     }
 
-    public void deleteStudent(String id){
+    public void deleteStudent(String token){
         try{
             System.out.println("========삭제할 학생 아이디를 입력해주세요.========");
-            System.out.print("Student ID:");
+            System.out.print("학생ID:");
             String deleteId=scanner.next();
-            Response response=stub.request(Request.newBuilder()
-                    .setRequestId(id)
+            Response response=studentStub.deleteStudent(Request.newBuilder()
+                    .setToken(token)
                     .setType("학생 삭제하기")
                     .setPayload(deleteId)
                     .build());

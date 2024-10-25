@@ -8,16 +8,16 @@ public interface RequestOrBuilder extends
     com.google.protobuf.MessageOrBuilder {
 
   /**
-   * <code>string requestId = 1;</code>
-   * @return The requestId.
+   * <code>string token = 1;</code>
+   * @return The token.
    */
-  java.lang.String getRequestId();
+  java.lang.String getToken();
   /**
-   * <code>string requestId = 1;</code>
-   * @return The bytes for requestId.
+   * <code>string token = 1;</code>
+   * @return The bytes for token.
    */
   com.google.protobuf.ByteString
-      getRequestIdBytes();
+      getTokenBytes();
 
   /**
    * <code>string type = 2;</code>

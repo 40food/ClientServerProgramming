@@ -7,8 +7,9 @@ import java.util.ArrayList;
 
 public class StudentList {
 	protected ArrayList<Student> vStudent;
+	private String filePath;
 	
-	public StudentList(String sStudentFileName) throws FileNotFoundException, IOException {
+	public StudentList(String sStudentFileName) throws IOException {
 		BufferedReader objStudentFile = new BufferedReader(new FileReader(sStudentFileName));
 		this.vStudent = new ArrayList<Student>();
 		while (objStudentFile.ready()) {
@@ -18,15 +19,22 @@ public class StudentList {
 			}
 		}
 		objStudentFile.close();
+		filePath=sStudentFileName;
 	}
 
 	public ArrayList<Student> getAllStudentRecords() throws NullDataException {
-		if(this.vStudent.isEmpty()) throw new NullDataException("===student 데이터가 없습니다.");
+		if(this.vStudent.isEmpty()) throw new NullDataException("학생 데이터가 없습니다.");
 		return this.vStudent;
 	}
-	public boolean addStudentRecord(String sStudentFileName,String studentInfo){ //원한다면 실패 이유 exception 추가
+	public Student getStudent(String id) throws NullDataException{
+		for(Student s:vStudent){
+			if(s.getStudentId().equals(id)) return s;
+		}
+		throw new NullDataException("해당하는 학생이 없습니다.");
+	}
+	public boolean addStudentRecord(String studentInfo){
 		try {
-			BufferedWriter bufferedWriter = new BufferedWriter(new FileWriter(sStudentFileName, true));
+			BufferedWriter bufferedWriter = new BufferedWriter(new FileWriter(filePath, true));
 			bufferedWriter.write(studentInfo);
 			bufferedWriter.newLine();
 			bufferedWriter.close();
@@ -35,9 +43,9 @@ public class StudentList {
 			throw new RuntimeException(e);
 		}
 	}
-	public boolean deleteStudentRecord(String sStudentFileName,String studentId){
+	public boolean deleteStudentRecord(String studentId){
 		try {
-			File studentFile = new File(sStudentFileName);
+			File studentFile = new File(filePath);
 			File tempFile = new File("studentTemp.txt");
 			BufferedReader reader = new BufferedReader(new FileReader(studentFile));
 			BufferedWriter writer = new BufferedWriter(new FileWriter(tempFile));
@@ -61,15 +69,5 @@ public class StudentList {
 		} catch (IOException e) {
             throw new RuntimeException(e);
         }
-	}
-
-	public Student isRegisteredStudent(String id,String pw) {
-		for (int i = 0; i < this.vStudent.size(); i++) {
-			Student objStudent = (Student) this.vStudent.get(i);
-			if (objStudent.match(id,pw)) {
-				return this.vStudent.get(i);
-			}
-		}
-		return null;
 	}
 }
