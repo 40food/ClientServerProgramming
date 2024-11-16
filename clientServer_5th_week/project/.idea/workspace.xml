@@ -5,12 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9fd86e97-3404-4bf8-b1c6-6095960d7297" name="변경" comment="grpc로 이름 저장 및 꺼내기">
-      <change beforePath="$PROJECT_DIR$/../../clientServer_1st_week/.gradle/8.4/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/../../clientServer_1st_week/.gradle/8.4/executionHistory/executionHistory.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../clientServer_1st_week/.gradle/8.4/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../../clientServer_1st_week/.gradle/8.4/executionHistory/executionHistory.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../clientServer_1st_week/.gradle/8.4/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/../../clientServer_1st_week/.gradle/8.4/fileHashes/fileHashes.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../clientServer_1st_week/.gradle/8.4/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../../clientServer_1st_week/.gradle/8.4/fileHashes/fileHashes.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../clientServer_1st_week/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../../clientServer_1st_week/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../clientServer_1st_week/.gradle/file-system.probe" beforeDir="false" afterPath="$PROJECT_DIR$/../../clientServer_1st_week/.gradle/file-system.probe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../clientServer_10th_week/PNF/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../clientServer_10th_week/PNF/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -209,6 +204,7 @@
       <workItem from="1729795935615" duration="1000" />
       <workItem from="1729796190518" duration="45000" />
       <workItem from="1729797229168" duration="1398000" />
+      <workItem from="1731217085735" duration="63000" />
     </task>
     <task id="LOCAL-00001" summary="grpc로 이름 저장 및 꺼내기">
       <option name="closed" value="true" />
